@@ -1216,7 +1216,7 @@ footer a{
   }
 
 }
-@media(max-width:640px){
+@media(max-width:680px){
   .route-tab-swiper .route-tab-menu{
     width: max-content;
     border-radius: 50px;

@@ -556,6 +556,9 @@ main .swiper-button-next::after, main .swiper-button-prev::after{
   cursor: pointer;
   opacity:0;
 }
+.route-tab-swiper{
+  display: none;
+}
 @media (hover: hover) {
   .section-route .route-tab-menu-box:hover .block{
     opacity:1;
@@ -1066,31 +1069,31 @@ footer a{
     background-color: #f6f6f6;
     border-radius: 50px;
     margin-bottom: 24px;
-    overflow-x: scroll;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch; /* 부드러운 스크롤링 */
-  }
-  .route-tab-menu::-webkit-scrollbar {
-    display: none; /* 스크롤바 숨기기 */
   }
   .route-tab-menu li:not(:last-child){
     margin-bottom: 0;
   }
   .route-tab-menu li a{
-    display: inline-block;
     padding: 6px 16px;
     font-size: 16px;
     font-weight: 500;
-    color: #292929;
     border-radius: 50px;
-  }
-  .route-tab-menu li.btn a{
-    color: #fff;
-    background-color: #cc0000;
   }
   .section-route .route-text-box .block{
     display: none;
   }
+  .route-tab-box01{
+    display: none;
+  }
+  .route-tab-swiper{
+    display: block;
+    margin-right: 5%;
+  }
+  .route-tab-swiper .swiper-slide{
+    width: fit-content;
+  }
+
+
 
 
   .about-title-section{
@@ -1214,9 +1217,9 @@ footer a{
 
 }
 @media(max-width:640px){
-  .route-tab-menu{
-    width: 100%;
-    border-radius: 50px 0 0 50px;
+  .route-tab-swiper .route-tab-menu{
+    width: max-content;
+    border-radius: 50px;
   }
 }
 @media(max-width:440px){

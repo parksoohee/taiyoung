@@ -327,6 +327,9 @@ main .swiper-button-next::after, main .swiper-button-prev::after{
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
+.notice-title1{
+  margin-bottom: 16px;
+}
 .notice-list-text{
   color: #767676;
   overflow: hidden;
@@ -345,6 +348,10 @@ main .swiper-button-next::after, main .swiper-button-prev::after{
   width: 7%;
   color: #880000;
   margin-right: 40px;
+}
+.point1{
+  color: #880000;
+  margin-bottom: 8px;
 }
 .notice-list-data{
   color: #767676;

@@ -18,6 +18,8 @@ header{
   z-index: 99;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, .7);
+  background-color: transparent;
+  transition: all .3s;
 }
 .header-in{
   width: 90%;
@@ -30,12 +32,63 @@ header{
 }
 .header-in .nav{
   display: flex;
-  width: 29.4%;
+  width: 40%;
+  /* width: 29.4%; */
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  text-align: center;
 }
-.header-in .nav li a{
+.header-in .nav>li{
+  position: relative;
+  width: 25%;
+}
+.header-in .nav>li>a{
   display: block;
   color: #121212;
+}
+.depth{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  padding: 10px 0;
+  z-index: 11;
+  height: 398px;
+  width: 100%;
+  display: none;
+  visibility: hidden
+}
+.depth.show{
+  visibility: visible;
+  display: block;
+}
+.depth.slide-down {
+  display: block;
+  visibility: visible; /* 슬라이드 다운 중에 보이게 설정 */
+}
+.depth ul{
+  padding: 10px 0;
+}
+.depth ul li a{
+  color: #767676;
+  padding: 10px 14px;
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  white-space: nowrap;
+  transition: all .5s;
+}
+.depth ul li a:hover{
+  color: #121212;
+  transition: all .5s;
+}
+header.drop{
+  position: fixed;
+  background-color: #fff;
+  height: 452px;
+  transition: all .5s;
 }
 .header-in .mo-nav{
   display: flex;
@@ -783,6 +836,11 @@ footer a{
 }
 
 @media(max-width:1450px){
+
+
+  .header-in .nav{
+    width: 50%;
+  }
 
 
 
